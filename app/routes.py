@@ -5,7 +5,12 @@ from flask import render_template
 @app.route('/index')
 def index():
     return render_template("index.html")
-    
+
 @app.route('/hello')
 def hello():
     return 'hello'
+
+@app.route('/new')
+def new():
+    return 'hi chiara'
+    
